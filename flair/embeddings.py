@@ -1351,7 +1351,7 @@ class FlaubertEmbeddings(TokenEmbeddings):
         super().__init__()
 
         self.tokenizer = FlaubertTokenizer.from_pretrained(pretrained_model_name_or_path)
-        self.model = FlaubertEmbeddings.from_pretrained(
+        self.model = FlaubertModel.from_pretrained(
             pretrained_model_name_or_path=pretrained_model_name_or_path,
             output_hidden_states=True,
         )
